@@ -6,7 +6,7 @@ The MES files - like a lot of others in the GDI - follow a format where the file
 
 For example:
 
-![Story header hex](pics/story header hex.png)
+![Story header hex](pics/story%20header%20hex.png)
 
 STORY01.MES starts with “60 00 00 00”, meaning that the first text entry starts at 0x60 in the file. There’s a repeat “60 00 00 00” (not sure why) and then “58 06 00 00” which denotes the next text to parse starts at 0x0658.
 
