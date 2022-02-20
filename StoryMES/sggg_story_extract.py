@@ -10,7 +10,7 @@ was.
 import struct
 import re
 
-filename = 'STORY01.MES'
+filename = 'files/STORY00.MES'
 
 lengthCount = 0
 lineLengths = []
@@ -35,7 +35,7 @@ with open(filename, 'rb') as file:
         section = file.read(lineLength)
         section = re.sub(br'((?:@[a-z]{1,2}\d*){1,4})', br'\n \1 --- ', section)
 #        section = re.sub(br'@', br'\n', section)
-        print section
+        print section.decode("shift-jis").encode("utf-8")
 
         print ""
 
